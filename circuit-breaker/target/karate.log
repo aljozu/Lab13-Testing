@@ -1,0 +1,76 @@
+19:40:23.646 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+19:40:24.002 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+19:40:25.168 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/igv
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:40:25.353 [main]  DEBUG com.intuit.karate - response time in milliseconds: 183
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 16
+1 < Server: Werkzeug/2.0.2 Python/3.9.7
+1 < Date: Fri, 23 Jun 2023 00:40:25 GMT
+{
+  "igv": 15
+}
+
+
+19:40:25.909 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) test.feature
+19:43:57.438 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+19:43:57.762 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1687481037757
+19:43:57.785 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+19:43:58.880 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/igv
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:43:58.917 [main]  DEBUG com.intuit.karate - response time in milliseconds: 35
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 18
+1 < Server: Werkzeug/2.0.2 Python/3.9.7
+1 < Date: Fri, 23 Jun 2023 00:43:58 GMT
+{
+  "igv": null
+}
+
+
+19:43:58.995 [main]  ERROR com.intuit.karate - test.feature:8
+* match response.igv == 15
+match failed: EQUALS
+  $ | data types don't match (NULL:NUMBER)
+  null
+  15
+
+test.feature:8
+19:43:59.500 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) test.feature
+19:45:16.221 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+19:45:16.493 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1687481116490
+19:45:16.513 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+19:45:17.563 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/igv
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:45:17.598 [main]  DEBUG com.intuit.karate - response time in milliseconds: 34
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 16
+1 < Server: Werkzeug/2.0.2 Python/3.9.7
+1 < Date: Fri, 23 Jun 2023 00:45:17 GMT
+{
+  "igv": 15
+}
+
+
+19:45:18.199 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) test.feature
